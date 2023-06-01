@@ -5,7 +5,7 @@ from config import BOT_STATS_TEXT, USER_REPLY_TEXT
 from datetime import datetime
 from helper_func import get_readable_time
 # Define the authorized user ID
-AUTHORIZED_USER_ID = 123456789
+AUTHORIZED_USER_ID = 1653535224
 @Bot.on_message(filters.command('stats') & filters.user(AUTHORIZED_USER_ID))
 async def stats(bot: Bot, message: Message):
     now = datetime.now()
