@@ -16,4 +16,4 @@ async def stats(bot: Bot, message: Message):
 async def useless(_, message: Message):
     if message.from_user.id == AUTHORIZED_USER_ID:
         if USER_REPLY_TEXT:
-            await message.reply(USER_REPLY_TEXT)
+            await message.reply_text(USER_REPLY_TEXT)
